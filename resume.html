@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이은표 그로스 마케터 CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    :root {
+      --primary-dark: #0b2545;
+      --accent-blue: #1e3a8a;
+      --light-gray: #f4f6f9;
+      --text-dark: #2c3e50;
+      --text-light: #ffffff;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: #f0f2f5;
+      color: var(--text-dark);
+      display: flex;
+      justify-content: center;
+      overflow-x: hidden;
+    }
+
+    .cv-container {
+      display: flex;
+      width: 100%;
+      max-width: 1100px;
+      background: #fff;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 32%;
+      background: var(--primary-dark);
+      color: var(--text-light);
+      padding: 2rem;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    .profile-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid var(--light-gray);
+      margin: 0 auto 2rem;
+      display: block;
+      object-fit: cover;
+    }
+
+    .sidebar h2 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+      border-bottom: 2px solid rgba(255,255,255,0.2);
+      padding-bottom: 0.5rem;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 0.8rem;
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .sidebar li i {
+      margin-right: 10px;
+      color: var(--light-gray);
+    }
+
+    .education {
+      margin-top: 1rem;
+    }
+
+    .edu-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .edu-year {
+      flex: 0 0 120px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-right: 1rem;
+      color: #ffffff;
+    }
+
+    .edu-info {
+      flex: 1;
+    }
+
+    .edu-school {
+      font-weight: 600;
+      font-size: 1rem;
+      margin-bottom: 0.2rem;
+      color: #ffffff;
+    }
+
+    .edu-degree,
+    .edu-grade {
+      font-size: 0.9rem;
+      color: #e0e6ed;
+    }
+
+    .main-content {
+      width: 68%;
+      padding: 5rem 2.5rem 2.5rem 2.5rem;
+      word-wrap: break-word;
+      overflow-wrap: anywhere;
+    }
+
+    .header {
+      border-bottom: 2px solid var(--light-gray);
+      padding-bottom: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .header .name {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent-blue);
+    }
+
+    .header .title {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #555;
+      margin-top: 0.3rem;
+    }
+
+    .main-content h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent-blue);
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+
+    .main-content h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 60px;
+      height: 2px;
+      background: var(--accent-blue);
+    }
+
+    .main-content p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    @media (max-width: 992px) {
+      .cv-container {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+      }
+      .sidebar, .main-content {
+        width: 100%;
+      }
+      .header .name {
+        font-size: 1.6rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0.5rem;
+      }
+      .cv-container {
+        flex-direction: column;
+        width: 90% !important;
+        max-width: 100% !important;
+        border-radius: 0;
+        box-shadow: none;
+      }
+      .sidebar, .main-content {
+        width: 90% !important;
+        padding: 1.5rem 1rem;
+      }
+      .main-content .name {
+        font-size: 1.4rem;
+      }
+      .main-content .title {
+        font-size: 1rem;
+      }
+      .main-content p {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cv-container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <img src="profile.png" alt="프로필" class="profile-photo">
+
+      <h2>CONTACT</h2>
+      <ul>
+        <li><i class="fas fa-phone"></i>010-9259-8039</li>
+        <li><i class="fas fa-envelope"></i>dmsvy9259@naver.com</li>
+        <li><i class="fas fa-map-marker-alt"></i>서울특별시 구로구</li>
+        <li><i class="fas fa-globe"></i>https://github.com/niceCityGocheok</li>
+      </ul>
+
+      <h2>EDUCATION</h2>
+      <div class="education">
+        <div class="edu-item">
+          <span class="edu-year">2020 – 2025</span>
+          <div class="edu-info">
+            <div class="edu-school">상명대학교</div>
+            <div class="edu-degree">공간환경학부 학사</div>
+            <div class="edu-grade">GPA: 3.63 / 4.5</div>
+          </div>
+        </div>
+      </div>
+
+      <h2>SKILLS</h2>
+      <ul>
+        <li>데이터 분석: SQL, Python, Looker Studio</li>
+        <li>클라우드: GCP</li>
+        <li>AI/광고: ML/DL, 광고소재</li>
+        <li>마케팅: 콘텐츠, SNS, SEO</li>
+        <li>리더십 & 커뮤니케이션</li>
+      </ul>
+
+      <h2>LANGUAGES</h2>
+      <ul>
+        <li>한국어 (원어민)</li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <div class="header">
+        <div class="name">이은표</div>
+        <div class="title">그로스 마케터</div>
+      </div>
+
+      <h2>PROFILE</h2>
+      <p>
+        데이터 기반 마케팅 전략 수립 및 실행에 강점을 가진 신입 마케터입니다. 
+        빠르게 변화하는 시장 환경에 적응하며, 새로운 도전을 통해 성장하는 것을 즐깁니다. 
+        팀워크와 소통을 바탕으로 조직의 성과에 기여하고자 합니다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
